@@ -18,8 +18,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Clear & Reset Function
-- [x] Split Bill Function (behind numpad)
+- [x] Clear & Reset Function (behind numpad)
+- [x] Split Bill Function
 
 ## Video Walkthrough 
 
