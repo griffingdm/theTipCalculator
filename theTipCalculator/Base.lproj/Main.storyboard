@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OPL-ZP-lBH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tippr-->
+        <scene sceneID="ilN-Nn-m4a">
+            <objects>
+                <viewController id="7yD-MJ-8fI" customClass="ViewController" customModule="theTipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l31-0A-lt3"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbd-Ie-aG3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O8M-ef-PZq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-ru-7YU">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kkz-Ji-RL9">
+                                        <frame key="frameInset" minX="10" minY="20" width="355" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zd-Gb-bR3">
+                                                <frame key="frameInset" minX="13" minY="20" width="54" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="textColor" red="0.0077478531748056412" green="0.06981319934129715" blue="0.11742851138114929" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="XZg-m6-JYD">
+                                                <frame key="frameInset" minX="90" minY="10" width="250" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="7yD-MJ-8fI" eventType="editingChanged" id="Btn-8J-64k"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7z-zN-bPd">
+                                        <frame key="frameInset" minX="25" minY="130" width="54" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="textColor" red="0.0077478531748056412" green="0.06981319934129715" blue="0.11742851138114929" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uT-te-1Sj">
+                                        <frame key="frameInset" minY="200" width="375" height="388"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="zxu-kG-e10">
+                                                <frame key="frameInset" minX="102" width="250" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <color key="textColor" red="0.0077478531748056412" green="0.06981319934129715" blue="0.11742851138114929" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nh-Hs-TaX">
+                                                <frame key="frameInset" minX="25" minY="20" width="66" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="textColor" red="0.0077478531748056412" green="0.06981319934129715" blue="0.11742851138114929" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="mkb-L2-LtA">
+                                                <frame key="frameInset" minX="20" minY="95" width="335" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="15%"/>
+                                                    <segment title="20%"/>
+                                                    <segment title="24%"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="7yD-MJ-8fI" eventType="valueChanged" id="1Ng-Fo-9wW"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-kw-61V">
+                                                <frame key="frameInset" minX="20" minY="138" width="337" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="😁"/>
+                                                    <segment title="😊😋"/>
+                                                    <segment title="😀🤓😌"/>
+                                                    <segment title="😉😝🤔🙃"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="calculate:" destination="7yD-MJ-8fI" eventType="valueChanged" id="qxS-JJ-9Ix"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="per person" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j94-tl-wet">
+                                                <frame key="frameInset" minX="204" minY="50" width="148" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8r-q9-TQw">
+                                                <frame key="frameInset" minY="196" width="375" height="209"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.33469387888908386" green="0.38669097423553467" blue="0.42646774649620056" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <state key="normal" title="Clear &amp; Reset">
+                                                    <color key="titleColor" red="0.9968608021736145" green="0.84205538034439087" blue="0.11500341445207596" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clear:" destination="7yD-MJ-8fI" eventType="touchUpInside" id="hLK-dy-UgO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.74230682849884033" green="0.76463758945465088" blue="0.78333473205566406" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="dic-ox-RGS">
+                                        <frame key="frameInset" minX="100" minY="110" width="250" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        <color key="textColor" red="0.0077478531748056412" green="0.06981319934129715" blue="0.11742851138114929" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="per person" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-td-YDS">
+                                        <frame key="frameInset" minX="202" minY="160" width="148" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                        <color key="textColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74230682849884033" green="0.76463758945465088" blue="0.78333473205566406" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aPy-q9-nUd" appends="YES" id="z5f-sW-It9"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tippr" id="KAg-IP-mSc"/>
+                    <connections>
+                        <outlet property="billAmountField" destination="XZg-m6-JYD" id="AI3-sX-cIh"/>
+                        <outlet property="perPersonLabel" destination="j94-tl-wet" id="spa-Qh-Sei"/>
+                        <outlet property="splitController" destination="Ngw-kw-61V" id="dnl-XW-Lah"/>
+                        <outlet property="tipAmount" destination="dic-ox-RGS" id="YEY-T3-oeJ"/>
+                        <outlet property="tipPercentControl" destination="mkb-L2-LtA" id="TFL-5w-XpK"/>
+                        <outlet property="tipPersonLabel" destination="gdo-td-YDS" id="W23-AE-LpP"/>
+                        <outlet property="totalAmount" destination="zxu-kG-e10" id="uWH-pL-iKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmI-8t-O1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aPy-q9-nUd">
+                    <connections>
+                        <action selector="screenTap:" destination="7yD-MJ-8fI" id="Jfu-m5-SpO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1848.8" y="156.97151424287858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hvK-P6-chE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OPL-ZP-lBH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Pz-oq-L53">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7yD-MJ-8fI" kind="relationship" relationship="rootViewController" id="Do4-Vk-buw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6A5-Wj-Wb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="156.97151424287858"/>
+        </scene>
+    </scenes>
+</document>
