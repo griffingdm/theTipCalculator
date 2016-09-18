@@ -105,6 +105,13 @@
                                                 <color key="textColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by Griffin Mullins in September 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzC-K8-pCv">
+                                                <frame key="frameInset" minY="367" width="375" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                <color key="textColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="0.25" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.74230682849884033" green="0.76463758945465088" blue="0.78333473205566406" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </view>
