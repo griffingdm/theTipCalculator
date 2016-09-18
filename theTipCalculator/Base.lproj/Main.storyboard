@@ -133,7 +133,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tippr" id="KAg-IP-mSc">
-                        <barButtonItem key="rightBarButtonItem" title="Reset" style="plain" id="Yck-Xh-cup">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" style="done" id="Yck-Xh-cup">
                             <color key="tintColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="clear:" destination="7yD-MJ-8fI" id="PMh-Pq-2s7"/>
