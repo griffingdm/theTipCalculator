@@ -105,20 +105,8 @@
                                                 <color key="textColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8r-q9-TQw">
-                                                <frame key="frameInset" minY="196" width="375" height="209"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.33469387888908386" green="0.38669097423553467" blue="0.42646774649620056" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                                <state key="normal" title="Clear &amp; Reset">
-                                                    <color key="titleColor" red="0.9968608021736145" green="0.84205538034439087" blue="0.11500341445207596" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="clear:" destination="7yD-MJ-8fI" eventType="touchUpInside" id="hLK-dy-UgO"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.74230682849884033" green="0.76463758945465088" blue="0.78333473205566406" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.74230682849884033" green="0.76463758945465088" blue="0.78333473205566406" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="dic-ox-RGS">
                                         <frame key="frameInset" minX="100" minY="110" width="250" height="70"/>
@@ -144,8 +132,16 @@
                             <outletCollection property="gestureRecognizers" destination="aPy-q9-nUd" appends="YES" id="z5f-sW-It9"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tippr" id="KAg-IP-mSc"/>
+                    <navigationItem key="navigationItem" title="Tippr" id="KAg-IP-mSc">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" style="plain" id="Yck-Xh-cup">
+                            <color key="tintColor" red="0.11639408767223358" green="0.17504698038101196" blue="0.22184652090072632" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clear:" destination="7yD-MJ-8fI" id="PMh-Pq-2s7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="bgView" destination="4mE-ru-7YU" id="HbH-Th-rYT"/>
                         <outlet property="billAmountField" destination="XZg-m6-JYD" id="AI3-sX-cIh"/>
                         <outlet property="perPersonLabel" destination="j94-tl-wet" id="spa-Qh-Sei"/>
                         <outlet property="splitController" destination="Ngw-kw-61V" id="dnl-XW-Lah"/>

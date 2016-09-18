@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalAmount: UILabel!
     @IBOutlet weak var perPersonLabel: UILabel!
     @IBOutlet weak var tipPersonLabel: UILabel!
+    @IBOutlet weak var bgView: UIView!
     
 
     @IBOutlet weak var splitController: UISegmentedControl!
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        perPersonLabel.isHidden = true
-        tipPersonLabel.isHidden = true
+        perPersonLabel.alpha = 0
+        tipPersonLabel.alpha = 0
         billAmountField.becomeFirstResponder()
     }
 
@@ -40,6 +41,12 @@ class ViewController: UIViewController {
         billAmountField.text = ""
         splitController.selectedSegmentIndex = 0
         tipPercentControl.selectedSegmentIndex = 1
+        
+        let bgColor = bgView.backgroundColor
+        bgView.backgroundColor = UIColor.white
+        UIView.animate(withDuration: 0.25, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { 
+            self.bgView.backgroundColor = bgColor
+        })
         calculate(self)
     }
     
@@ -49,11 +56,15 @@ class ViewController: UIViewController {
         let split = splitArray[splitController.selectedSegmentIndex]
         
         if splitController.selectedSegmentIndex > 0 {
-            perPersonLabel.isHidden = false
-            tipPersonLabel.isHidden = false
+            UIView.animate(withDuration: 0.25, animations: { 
+                self.perPersonLabel.alpha = 1
+                self.tipPersonLabel.alpha = 1
+            })
         } else {
-            perPersonLabel.isHidden = true
-            tipPersonLabel.isHidden = true
+            UIView.animate(withDuration: 0.25, animations: {
+                self.perPersonLabel.alpha = 0
+                self.tipPersonLabel.alpha = 0
+            })
         }
         
         let bill = Double(billAmountField.text!) ?? 0
